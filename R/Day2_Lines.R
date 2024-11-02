@@ -9,7 +9,7 @@ icb_boundaries <- read_sf("Data/Integrated_Care_Boards_April_2023_EN_BFE_-267572
 
 # Apply KNN
 icb_boundaries2 <- knearneigh(st_centroid(icb_boundaries),
-                              k = 5) %>%
+                              k = 4) %>%
   knn2nb()
 
 # Create a line layer showing Queen's case contiguities
