@@ -8,8 +8,8 @@ library(ggspatial)
 street_lamps <- read.csv("Data/Street_Lighting.csv")
 #https://geoportal.statistics.gov.uk/datasets/62eb9df29a2f4521b5076a419ff9a47e_0/explore
 ward_to_city_lkp <- read.csv("Data/Ward_to_Westminster_Parliamentary_Constituency_to_LAD_to_UTLA_(July_2024)_Lookup_in_UK.csv")
-ward_boundaries <- read_sf("Data/Wards_May_2024_Boundaries_UK_BFE__4726407479218445330.gpkg")
 #https://geoportal.statistics.gov.uk/datasets/3f28a3b7919b4a579b34c0823b386a51_0/explore?location=53.774785%2C-1.711037%2C11.29
+ward_boundaries <- read_sf("Data/Wards_May_2024_Boundaries_UK_BFE__4726407479218445330.gpkg")
 
 # Pre-process the data
 bfd_wards <- right_join(select(ward_to_city_lkp,
