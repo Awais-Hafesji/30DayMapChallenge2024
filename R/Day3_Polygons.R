@@ -85,8 +85,8 @@ plot <- ggplot(cars_LAD) +
        caption = "Local Authority Boundaries: ONS Open Geography Portal, 2022; Data: Nomis Census 2021")
 
 plot1 <- ggdraw(plot) + 
-  draw_label(x=0.92,
-             y=0.82,
+  draw_label(x=0.99,
+             y=0.80,
              hjust=1, 
              "Census 2021 statistics includes data on car or van \navailability for household members. The Local \nAuthority in Yorkshire with the highest car or van \ncount is Leeds at 373,013. The Local Authority \nwith the lowest count is Richmondshire at 31,889.", 
              color = "#231f20",
@@ -97,4 +97,4 @@ plot1 <- ggdraw(plot) +
 plot1
 
 # Save the output
-ggsave("Outputs/Day3_Polygons.png", dpi = 320, width = 13.5, height = 8.5, units = "in")
+ggsave("Outputs/Day3_Polygons.png", dpi = 320, width = 11.5, height = 8.5, units = "in")
