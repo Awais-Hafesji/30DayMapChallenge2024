@@ -81,14 +81,14 @@ plot <- ggplot(cars_LAD) +
   annotation_north_arrow(location = "tr",
                          style = north_arrow_fancy_orienteering) +
   annotation_scale(location = "br") +
-  labs(title = "Total Number of Cars or Vans per Local Authority in Yorkshire",
+  labs(title = "Total Number of Cars or Vans per Local Authority in Yorkshire and the Humber",
        caption = "Local Authority Boundaries: ONS Open Geography Portal, 2022; Data: Nomis Census 2021")
 
 plot1 <- ggdraw(plot) + 
   draw_label(x=0.99,
              y=0.80,
              hjust=1, 
-             "Census 2021 statistics includes data on car or van \navailability for household members. The Local \nAuthority in Yorkshire with the highest car or van \ncount is Leeds at 373,013. The Local Authority \nwith the lowest count is Richmondshire at 31,889.", 
+             "Census 2021 statistics includes data on car or van \navailability for household members. The Local \nAuthority in Yorkshire and the Humber with the \nhighest car or van count is Leeds at 373,013. The \nLocal Authority with the lowest count is \nRichmondshire at 31,889.", 
              color = "#231f20",
              size = 12,
              fontfamily="sans") +
