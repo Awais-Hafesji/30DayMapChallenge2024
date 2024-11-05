@@ -89,7 +89,7 @@ plot1 <- ggdraw(plot) +
              hjust=1, 
              "Census 2021 statistics includes data on car \nor van availability for household members. \n \nThe Local Authority in Yorkshire with the highest \ncar or van count is Leeds at 373,013. The \nbreakdown of which is shown here.", 
              color = "#231f20",
-             size = 12,
+             size = 10,
              fontfamily="sans") +
   theme(panel.background = element_rect(fill = "grey90",
                                         colour = "grey90"))
