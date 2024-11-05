@@ -81,7 +81,7 @@ plot <- ggplot(hg) +
                          style = north_arrow_fancy_orienteering) +
   annotation_scale(location = "br") +
   labs(title = "Total Number of Cars or Vans per MSOA in Leeds",
-       caption = "Local Authority Boundaries: ONS Open Geography Portal, 2022; Data: Nomis Census 2021")
+       caption = "Local Authority Boundaries: ONS Open Geography Portal, 2021; Data: Nomis Census 2021")
 
 plot1 <- ggdraw(plot) + 
   draw_label(x=0.98,
