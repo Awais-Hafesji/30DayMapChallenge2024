@@ -45,5 +45,6 @@ ggplot() +
   guides(colour = guide_legend(override.aes = list(size = 5))) +
   coord_sf(xlim = c(-170, 190), ylim = c(30, 100), expand = FALSE) +
   annotation_north_arrow(location = 'tr', style =  north_arrow_fancy_orienteering)
-  
+
+# Save the output
 ggsave("Outputs/Day11_Arctic.png", dpi = 320, height = 7, width = 14, units = "in")
