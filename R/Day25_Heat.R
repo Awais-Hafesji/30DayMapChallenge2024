@@ -108,7 +108,7 @@ plot <- ggplot(hg_heating) +
               axis.text.y = element_text(colour = "white",
                                          family = "Giphurs"),
               plot.margin = unit(c(2, 0, 2, 1), "cm")) +
-        labs(title = "Number of Households Using \n\"District or Communal Heat Networks Only\"\nper Local Authority in London",
+        labs(title = "Number of Households which have access to\n\"District or Communal Heat Networks Only\"\nper Local Authority in London",
              subtitle = "Based on Census 2021 survey data",
              caption = "\nData: ONS Census 2021\nBoundaries: ONS Open Geography Portal, 2023",
              ) +
