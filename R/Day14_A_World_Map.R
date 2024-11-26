@@ -7,7 +7,6 @@ library(rnaturalearth)
 
 # Load data
 Data <- read.csv("Data/CME.csv")
-world <- map_data("world")
 world <- ne_countries(scale = "medium", returnclass = "sf")
 
 # Filter dataset
